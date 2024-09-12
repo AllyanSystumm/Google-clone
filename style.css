@@ -1,0 +1,188 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the main content */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Google logo styling */
+.logo img {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 30px;
+}
+
+/* Search form styling */
+.search-form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Search box styling */
+.search-box {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effect for search box */
+.search-box:focus {
+    border-color: #4285f4;
+}
+
+/* Button container */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Button styling */
+.search-btn, .lucky-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Button hover effect */
+.search-btn:hover, .lucky-btn:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}
+
+/* Footer styling */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #70757a;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .logo img {
+        width: 220px;
+        height: 74px;
+    }
+
+    .search-box {
+        font-size: 16px;
+    }
+
+    .search-btn, .lucky-btn {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 180px;
+        height: 60px;
+    }
+
+    .search-box {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .search-btn, .lucky-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Box shadow effect for search box */
+.search-box {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Transition effects for buttons */
+.search-btn, .lucky-btn {
+    transition: all 0.4s ease;
+}
+
+.search-btn:active, .lucky-btn:active {
+    transform: scale(0.95);
+}
+
+/* Additional hover effects for buttons */
+.search-btn:hover {
+    background-color: #e8e8e8;
+    border-color: #bbb;
+}
+
+.lucky-btn:hover {
+    background-color: #e8e8e8;
+    border-color: #bbb;
+}
+
+/* Focus effect for buttons */
+.search-btn:focus, .lucky-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4285f4;
+}
+
+/* Extra styling for active buttons */
+.search-btn:active {
+    background-color: #ddd;
+    border-color: #aaa;
+}
+
+.lucky-btn:active {
+    background-color: #ddd;
+    border-color: #aaa;
+}
+
+/* Button disable effect */
+button:disabled {
+    background-color: #f1f1f1;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Footer links hover effect */
+.footer a:hover {
+    text-decoration: underline;
+}
